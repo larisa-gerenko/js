@@ -13,3 +13,10 @@ console.log(freeSquare); */
 // let buzy = 600;
 // let free = sm - buzy;
 // console.log(free); // Площадь остатка
+
+// Третья задача
+
+let one = 5,
+  two = 7,
+  three = 8;
+let answer = Math.min(one, two, three);
