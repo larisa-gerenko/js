@@ -23,11 +23,14 @@ console.log(freeSquare); */
 
 // Четвертая задача
 
-let a = 10;
-let m = 15;
-let n = 28;
-if (m - a > n - a) {
-  console.log(n);
+let number = 50;
+let x = 14;
+let y = 156;
+
+if (Math.abs(x - number) > Math.abs(y - number)) {
+  alert("Ближайшее к заданному числу: " + y);
+} else if (Math.abs(x - number) < Math.abs(y - number)) {
+  alert("Ближайшее к заданному числу: " + x);
 } else {
-  console.log(m);
+  alert("Оба числа на одинаковом отдалении");
 }
