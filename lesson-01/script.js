@@ -16,7 +16,18 @@ console.log(freeSquare); */
 
 // Третья задача
 
-let one = 5,
-  two = 7,
-  three = 8;
-let answer = Math.min(one, two, three);
+// let one = 5,
+//   two = 7,
+//   three = 8;
+// let answer = Math.min(one, two, three);
+
+// Четвертая задача
+
+let a = 10;
+let m = 15;
+let n = 28;
+if (m - a > n - a) {
+  console.log(n);
+} else {
+  console.log(m);
+}
