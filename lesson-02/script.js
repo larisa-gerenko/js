@@ -27,33 +27,55 @@
 
 // Задача 2
 
-let dm = "1",
-  km = "2",
-  metr = "3",
-  mm = "4",
-  sm = "5";
-let unit = prompt("Введите номер единицы измерения?");
-let length = prompt("Введите длину отрезка");
+// let dm = "1",
+//   km = "2",
+//   metr = "3",
+//   mm = "4",
+//   sm = "5";
+// let unit = prompt("Введите номер единицы измерения?");
+// let length = prompt("Введите длину отрезка");
 
-let calc;
+// let calc;
 
-switch (unit) {
-  case "1":
-    calc = length * 10;
-    break;
-  case "2":
-    calc = length * 1000;
-    break;
-  case "3":
-    calc = length;
-    break;
-  case "4":
-    (calc = length * 0), 01;
-    break;
-  case "5":
-    (calc = length * 0), 1;
-    break;
-  default:
-    alert("Вы ввели неправильное значение");
+// switch (unit) {
+//   case "1":
+//     calc = length * 10;
+//     break;
+//   case "2":
+//     calc = length * 1000;
+//     break;
+//   case "3":
+//     calc = length;
+//     break;
+//   case "4":
+//     (calc = length * 0), 01;
+//     break;
+//   case "5":
+//     (calc = length * 0), 1;
+//     break;
+//   default:
+//     alert("Вы ввели неправильное значение");
+// }
+// alert("Длина отрезка " + length * 10);
+
+//Задача 3
+
+let number = prompt("Введите число от -999 до 999");
+
+if (number <= -100) {
+  alert("Отрицательное трехзначное число");
+} else if (number <= -10 && number > -100) {
+  alert("Отрицательное двузначное число");
+} else if (number < 0 && number > -10) {
+  alert("Отрицательное однозначное число");
+} else if (number == 0) {
+  alert("Нулевое число");
+} else if (number > 0 && number < 10) {
+  alert("Положительное однозначное число");
+} else if (number >= 10 && number <= 99) {
+  alert("Положительное двузначное число");
+} else if (number >= 100) {
+  alert("Положительное трехзначное  число");
+} else {
+  alert("Вы ввели неверное число");
 }
-alert("Длина отрезка " + length * 10);
