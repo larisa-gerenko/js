@@ -58,24 +58,38 @@
 // }
 // alert("Длина отрезка " + length * 10);
 
-//Задача 3
+// //Задача 3
 
-let number = prompt("Введите число от -999 до 999");
+// let number = prompt("Введите число от -999 до 999");
 
-if (number <= -100) {
-  alert("Отрицательное трехзначное число");
-} else if (number <= -10 && number > -100) {
-  alert("Отрицательное двузначное число");
-} else if (number < 0 && number > -10) {
-  alert("Отрицательное однозначное число");
-} else if (number == 0) {
-  alert("Нулевое число");
-} else if (number > 0 && number < 10) {
-  alert("Положительное однозначное число");
-} else if (number >= 10 && number <= 99) {
-  alert("Положительное двузначное число");
-} else if (number >= 100) {
-  alert("Положительное трехзначное  число");
-} else {
-  alert("Вы ввели неверное число");
-}
+// if (number <= -100) {
+//   alert("Отрицательное трехзначное число");
+// } else if (number <= -10 && number > -100) {
+//   alert("Отрицательное двузначное число");
+// } else if (number < 0 && number > -10) {
+//   alert("Отрицательное однозначное число");
+// } else if (number == 0) {
+//   alert("Нулевое число");
+// } else if (number > 0 && number < 10) {
+//   alert("Положительное однозначное число");
+// } else if (number >= 10 && number <= 99) {
+//   alert("Положительное двузначное число");
+// } else if (number >= 100) {
+//   alert("Положительное трехзначное  число");
+// } else {
+//   alert("Вы ввели неверное число");
+// }
+
+// Задача 4
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 == 0) {
+//     console.log("Three");
+//   } else if (i % 5 == 0) {
+//     console.log("Five");
+//   } else if (i % 5 == 0 && i % 3 == 0) {
+//     console.log("FiveThree");
+//   } else {
+//     console.log(i);
+//   }
+// }
