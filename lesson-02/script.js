@@ -39,24 +39,24 @@
 
 // switch (unit) {
 //   case "1":
-//     calc = length * 10;
+//     calc = length * 0.1;
 //     break;
 //   case "2":
 //     calc = length * 1000;
 //     break;
 //   case "3":
-//     calc = length;
+//     calc = +length;
 //     break;
 //   case "4":
-//     (calc = length * 0), 01;
+//     calc = length * 0.001;
 //     break;
 //   case "5":
-//     (calc = length * 0), 1;
+//     calc = length * 0.01;
 //     break;
 //   default:
 //     alert("Вы ввели неправильное значение");
 // }
-// alert("Длина отрезка " + length * 10);
+// alert(`Длина отрезка ${+calc.toFixed(3)} м`);
 
 // //Задача 3
 
@@ -116,15 +116,15 @@
 
 // Задача 6
 
-let plate = prompt("Введите количество тарелок");
-let wash = prompt("Введите количество моющего средства");
+// let plate = prompt("Введите количество тарелок");
+// let wash = prompt("Введите количество моющего средства");
 
-for (; plate > 0; plate--) {
-  if (wash === 0) {
-    break;
-  }
-  wash = wash - 0.5;
-  alert("Остаток моющего средства: " + wash);
-}
+// for (; plate > 0; plate--) {
+//   if (wash === 0) {
+//     break;
+//   }
+//   wash = wash - 0.5;
+//   alert("Остаток моющего средства: " + wash);
+// }
 
-alert("Осталось тарелок: " + plate + " Остаток моющего средства: " + wash);
+// alert("Осталось тарелок: " + plate + " Остаток моющего средства: " + wash);
