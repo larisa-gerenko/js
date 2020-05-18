@@ -62,16 +62,41 @@
 // console.log(arr);
 
 // Задача 4
-let count = 0;
+// let count = 0;
 
-for (i = 1; i <= 999999; i++) {
-  const ticket = i.toString().padStart(6, 0);
-  const one = Number(ticket[0]) + Number(ticket[1]) + Number(ticket[2]);
-  const two = Number(ticket[3]) + Number(ticket[4]) + Number(ticket[5]);
+// for (i = 1; i <= 999999; i++) {
+//   const ticket = i.toString().padStart(6, 0);
+//   const one = Number(ticket[0]) + Number(ticket[1]) + Number(ticket[2]);
+//   const two = Number(ticket[3]) + Number(ticket[4]) + Number(ticket[5]);
 
-  if (one == two) {
-    count++;
-  }
-}
+//   if (one == two) {
+//     count++;
+//   }
+// }
 
-console.log(count);
+// console.log(count);
+
+// Задача 5
+
+// let weight = [2, 7, 4, 1, 8, 1];
+
+// function compare(a, b) {
+//   if (a > b) return 1;
+//   if (a == b) return 0;
+//   if (a < b) return -1;
+// }
+
+// weight.sort(compare);
+
+// for (; weight.length > 1; ) {
+//   let newArr = weight.slice(-2);
+//   weight.pop();
+//   weight.pop();
+
+//   if (newArr[0] < newArr[1]) {
+//     let newElement = Number(newArr[1]) - Number(newArr[0]);
+//     weight.push(newElement);
+//     weight.sort(compare);
+//   }
+// }
+// console.log("Вес оставшихся молекул " + weight);
