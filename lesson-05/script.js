@@ -21,15 +21,31 @@
 
 // Задача 2
 
-function range(start, end, step) {
-  const arr = [];
+// function range(start, end, step) {
+//   const arr = [];
 
-  for (let i = start; i <= end; i = i + step) {
-    arr.push(i);
-  }
+//   for (let i = start; i <= end; i = i + step) {
+//     arr.push(i);
+//   }
 
-  return arr;
-}
+//   return arr;
+// }
 
-let result = range(5, 50, 2);
-console.log(result);
+// let result = range(5, 50, 2);
+// console.log(result);
+
+// Задача 3
+
+// let student = {
+//   Имя: "Лариса",
+//   Фамилия: "Геренко",
+//   Возраст: 18,
+//   Интересы: ["чтение", "рисование", "пение", "черчение"],
+//   МестоОбучения: "СПБГУ",
+// };
+
+// function list(obj) {
+//   console.log(Object.entries(obj));
+// }
+
+// let res = list(student);
