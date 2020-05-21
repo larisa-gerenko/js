@@ -82,17 +82,17 @@
 
 // Задача 4
 
-// for (let i = 1; i <= 100; i++) {
-//   if (i % 3 == 0) {
-//     console.log("Three");
-//   } else if (i % 5 == 0) {
-//     console.log("Five");
-//   } else if (i % 5 == 0 && i % 3 == 0) {
-//     console.log("FiveThree");
-//   } else {
-//     console.log(i);
-//   }
-// }
+for (let i = 1; i <= 100; i++) {
+  if (i % 5 == 0 && i % 3 == 0) {
+    console.log("FiveThree");
+  } else if (i % 5 == 0) {
+    console.log("Five");
+  } else if (i % 3 == 0) {
+    console.log("Three");
+  } else {
+    console.log(i);
+  }
+}
 
 // Задача 5
 
