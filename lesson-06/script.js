@@ -40,3 +40,30 @@
 // console.log(res());
 // console.log(res());
 // console.log(res());
+
+// Задача 3
+
+// let student = {
+//   name: "Иван",
+//   surname: "Петров",
+//   age: 21,
+//   trainingPlace: "ИТМО",
+//   interests: ["программирование", "музыка", "аниме"],
+
+//   list() {
+//     return (
+//       this.name +
+//       this.surname +
+//       ". " +
+//       this.age +
+//       "год. " +
+//       "Интересы: " +
+//       this.interests +
+//       "." +
+//       " Учится в " +
+//       this.trainingPlace
+//     );
+//   },
+// };
+
+// console.log(student.list());
