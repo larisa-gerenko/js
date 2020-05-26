@@ -67,3 +67,21 @@
 // };
 
 // console.log(student.list());
+
+// Задача 4
+
+// let arr = [];
+
+// function list(n) {
+//   if (n > 0) {
+//     arr.unshift(n);
+//     list(n - 1);
+//   }
+// }
+
+// list(5);
+
+// let factorial = arr.reduce(function (a, b) {
+//   return a + b;
+// });
+// console.log(factorial);
