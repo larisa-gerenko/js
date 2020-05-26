@@ -82,17 +82,17 @@
 
 // Задача 4
 
-for (let i = 1; i <= 100; i++) {
-  if (i % 5 == 0 && i % 3 == 0) {
-    console.log("FiveThree");
-  } else if (i % 5 == 0) {
-    console.log("Five");
-  } else if (i % 3 == 0) {
-    console.log("Three");
-  } else {
-    console.log(i);
-  }
-}
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 5 == 0 && i % 3 == 0) {
+//     console.log("FiveThree");
+//   } else if (i % 5 == 0) {
+//     console.log("Five");
+//   } else if (i % 3 == 0) {
+//     console.log("Three");
+//   } else {
+//     console.log(i);
+//   }
+// }
 
 // Задача 5
 
@@ -116,15 +116,16 @@ for (let i = 1; i <= 100; i++) {
 
 // Задача 6
 
-// let plate = prompt("Введите количество тарелок");
-// let wash = prompt("Введите количество моющего средства");
+let plate = prompt("Введите количество тарелок");
+let wash = prompt("Введите количество моющего средства");
 
-// for (; plate > 0; plate--) {
-//   if (wash === 0) {
-//     break;
-//   }
-//   wash = wash - 0.5;
-//   alert("Остаток моющего средства: " + wash);
-// }
+for (; plate > 0; plate--) {
+  let end = wash - 0.5;
+  if (end < 0) {
+    break;
+  }
+  wash = end;
+  alert("Остаток моющего средства: " + wash);
+}
 
-// alert("Осталось тарелок: " + plate + " Остаток моющего средства: " + wash);
+alert("Осталось тарелок: " + plate + " Остаток моющего средства: " + wash);
