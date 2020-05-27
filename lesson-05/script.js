@@ -49,3 +49,50 @@
 // }
 
 // let res = list(student);
+
+// // Задача 4
+
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+let vowels = ["а", "у", "о", "ы", "и", "э", "я", "ю", "ё", "е"];
+let consonant = [
+  "б",
+  "в",
+  "г",
+  "д",
+  "ж",
+  "з",
+  "й",
+  "к",
+  "л",
+  "м",
+  "н",
+  "п",
+  "р",
+  "с",
+  "т",
+  "ф",
+  "х",
+  "ц",
+  "ч",
+  "ш",
+  "щ",
+];
+let chars = [vowels, consonant];
+
+let number = randomInteger(3, 5);
+let start = Math.round(Math.random() * 1);
+let str = "";
+
+for (let i = 0; i < number; i++) {
+  let letter = chars[start];
+  let letterNumber = Math.floor(Math.random() * letter.length);
+
+  str += letter[letterNumber];
+  start = start == 1 ? 0 : 1;
+}
+
+console.log(str);
