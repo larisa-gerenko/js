@@ -85,3 +85,21 @@
 //   return a + b;
 // });
 // console.log(factorial);
+
+// Задача 5
+
+let arr = [
+  { price: 10, count: 2 },
+  { price: 5, count: 5 },
+
+  { price: 8, count: 5 },
+  { price: 12, count: 4 },
+  { price: 8, count: 4 },
+];
+
+arr.sort(function (obj1, obj2) {
+  return obj1.price - obj2.price;
+});
+
+let obj = arr[0];
+console.log(arr);
