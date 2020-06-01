@@ -1,32 +1,32 @@
 // Задача 1
 
-function currentTime() {
-  let hours = new Date().getHours();
+// function currentTime() {
+//   let hours = new Date().getHours();
 
-  let minutes = new Date().getMinutes();
-  let seconds = new Date().getSeconds();
+//   let minutes = new Date().getMinutes();
+//   let seconds = new Date().getSeconds();
 
-  hours = hours < 10 ? `0${hours}` : hours;
-  minutes = minutes < 10 ? `0${minutes}` : minutes;
-  seconds = seconds < 10 ? `0${seconds}` : seconds;
+//   hours = hours < 10 ? `0${hours}` : hours;
+//   minutes = minutes < 10 ? `0${minutes}` : minutes;
+//   seconds = seconds < 10 ? `0${seconds}` : seconds;
 
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+//   document.getElementById("minutes").innerHTML = minutes;
+//   document.getElementById("seconds").innerHTML = seconds;
 
-  const eHours = document.getElementById("hours");
-  eHours.innerHTML = hours;
-  eHours.style.color = "red";
+//   const eHours = document.getElementById("hours");
+//   eHours.innerHTML = hours;
+//   eHours.style.color = "red";
 
-  const eMinutes = document.getElementById("minutes");
-  eMinutes.innerHTML = ": " + minutes;
-  eMinutes.style.color = "blue";
+//   const eMinutes = document.getElementById("minutes");
+//   eMinutes.innerHTML = ": " + minutes;
+//   eMinutes.style.color = "blue";
 
-  const eSeconds = document.getElementById("seconds");
-  eSeconds.innerHTML = ": " + seconds;
-  eSeconds.style.color = "green";
-}
+//   const eSeconds = document.getElementById("seconds");
+//   eSeconds.innerHTML = ": " + seconds;
+//   eSeconds.style.color = "green";
+// }
 
-setInterval(currentTime, 1000);
+// setInterval(currentTime, 1000);
 
 // Задача 2
 
@@ -80,3 +80,28 @@ setInterval(currentTime, 1000);
 //   }
 // }
 // createGoods(goods);
+
+// Задача 3
+
+let elem = document.getElementById("red");
+let direction = true;
+
+elem.style.opacity = "1";
+
+setInterval(function () {
+  elem.style.opacity = "0";
+
+  if (direction && elem.nextElementSibling) {
+    elem = elem.nextElementSibling;
+  } else if (direction && !elem.nextElementSibling) {
+    elem = elem.previousElementSibling;
+    direction = !direction;
+  } else if (!direction && elem.previousElementSibling) {
+    elem = elem.previousElementSibling;
+  } else if (!direction && !elem.previousElementSibling) {
+    elem = elem.nextElementSibling;
+    direction = !direction;
+  }
+
+  elem.style.opacity = "1";
+}, 2000);
