@@ -1,0 +1,53 @@
+:root {
+  --color: lightgray;
+  --border-radius: 10px;
+  --image: url("https://media.gettyimages.com/vectors/cute-cartoon-dachshunds-in-love-vector-id865392634?s=2048x2048");
+}
+.puzzle {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+}
+.puzzle div {
+  width: 100px;
+  height: 100px;
+  background: var(--color);
+  background-image: var(--image);
+  background-size: 300px 300px;
+}
+
+.one {
+  background-position: left left;
+}
+.two {
+  background-position: center top !important;
+}
+.three {
+  background-position: right top !important;
+}
+.four {
+  background-position: left center !important;
+}
+.five {
+  background-position: center center !important;
+}
+.six {
+  background-position: center right !important;
+}
+.seven {
+  background-position: left bottom !important;
+}
+.eight {
+  background-position: center bottom !important;
+}
+.nine {
+  background-position: right bottom !important;
+}
+
+.empty div {
+  background-image: none;
+}
+
+.show {
+  background-image: var(--image) !important;
+}
