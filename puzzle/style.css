@@ -51,3 +51,8 @@
 .show {
   background-image: var(--image) !important;
 }
+
+.hide {
+  background-image: none !important;
+  pointer-events: none;
+}
