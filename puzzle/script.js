@@ -13,6 +13,14 @@ root.style.setProperty(
   "url(" + img[(Math.random() * img.length) | 0] + ")"
 );
 
+let draggableElements = document.querySelector(".draggable");
+for (var i = draggableElements.children.length; i >= 0; i--) {
+  draggableElements.appendChild(
+    draggableElements.children[(Math.random() * i) | 0]
+  );
+}
+console.log(draggableElements);
+
 let dragged = null;
 
 document.addEventListener("dragstart", function (event) {
@@ -20,7 +28,6 @@ document.addEventListener("dragstart", function (event) {
   dragged = event.target;
 });
 
-//Включаем события по сбрасыванию элемента
 document.addEventListener("dragover", function (event) {
   event.preventDefault();
 });
@@ -33,11 +40,3 @@ document.addEventListener("drop", function (event) {
     console.log(event);
   }
 });
-
-let draggableElements = document.querySelector(".draggable");
-for (var i = draggableElements.children.length; i >= 0; i--) {
-  draggableElements.appendChild(
-    draggableElements.children[(Math.random() * i) | 0]
-  );
-}
-console.log(draggableElements);
